@@ -1,0 +1,23 @@
+create database hospital_management-system
+
+create following tables
+
+user table
+create table user(
+name varchar(20),
+age int(3),
+gender varchar(10),
+email varchar(30),
+password varchar(20)
+);
+
+booking table
+create table booking(
+name varchar(20),
+date varchar(20),
+time varchar(20),
+doctor varchar(20),
+username varchar(20));
+
+
+change username password of database(if required) in connect.php 
