@@ -19,7 +19,7 @@ if ($conn->query($sql) === TRUE) {
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;\" onclick=\"location.href='login.html'\">Back to home </button>");
+  opacity: 0.9;\" onclick=\"location.href='userhome.php'\">Back to home </button>");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
