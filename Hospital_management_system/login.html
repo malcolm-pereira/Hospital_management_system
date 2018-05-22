@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>First Page</title>
+<style>
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+h2{
+color:red;
+}
+
+
+</style>
+<script>
+function validate()
+{
+var email=document.myform.user.value;
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email)) {
+    alert('Please provide a valid email address');
+    email.focus;
+return false;
+}
+}
+</script>
+</head>
+<body>
+<h2><center>HOTEL MANAGEMENT SYSTEM</H2>
+<hr>
+<br/>
+<br/>
+<h1><center>Login</h1>
+<br/>
+<form name="login" onsubmit="return(validate())" action="login.php"  method="post"  style="border:1px solid #ccc">
+<div class="container">
+<label for="user"><b>Email</b></label> 
+<input type="text" placeholder="Enter Email" name="user" required><br/>
+<br/>
+<label for="passwd"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="passwd" required><br/>
+<br/>
+<div class="clearfix">
+<button type="submit">Submit</button>
+</div>
+<br>
+<center><h4>Not a member yet?<a href="signup.html" >sign up</a></h4></center>
+<h5><center><a href="admin_login.html">ADMINISTRATION LOGIN</a></h5>
+</div>
+</form>
+</body>
+</html> 

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1> <p><center>Please fill in this form to book an appointment</p></h1>
+<hr>
+<br>
+<form name="booking"  action="booking.php"  method="post"  style="border:1px solid #ccc">
+<div class="container">
+<label for="name"><b>Name</b></label> 
+<input type="text" placeholder="Enter Name" name="name" required>
+<br/>
+<br/>
+<label for="date"><b>Date</b></label>
+<input type="date"  name="date" required>
+<br>
+<br>
+<label for="time"><b>Time</b></label>
+<input type="time" name="time" >
+<br>
+<br>
+<label for="doctor"><b>Select Doctor</b></label>
+<select name="doctor">
+ <option value="Dr.Niranjan">Dr.Niranjan</option>
+ <option value="Dr.Radha">Dr.Radha</option>
+ <option value="Dr.Krishna">Dr.Krishna</option>
+ <option value="Dr.Ronald">Dr.Ronald</option>
+</select>
+<br>
+<br>
+<div class="clearfix">
+  <button type="button" class="cancelbtn" onclick="window.location='userhome.php';">cancel</button>
+  <button type="submit" class="signupbtn">Confirm</button>
+  </div>
+  </div>
+  </form>
+  </body>
+  </html>
